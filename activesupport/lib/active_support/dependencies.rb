@@ -299,6 +299,7 @@ module ActiveSupport #:nodoc:
 
       def require(file)
         result = false
+        puts file
         load_dependency(file) { result = super }
         result
       end
